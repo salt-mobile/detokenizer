@@ -46,7 +46,6 @@ class Detokenizer:
         parser.add_argument('-v', '--version', action='version',
                             version=meta.__version__)
 
-        parser.add_argument(dest="cmd", help="Command")
         parser.add_argument(dest="source", help="Source file")
         parser.add_argument(dest="target", help="Output file")
         parser.add_argument(dest="config", help="Configuration file")
@@ -57,7 +56,6 @@ class Detokenizer:
 
         args = parser.parse_args()
 
-        self.command = args.cmd
         self.configFile = self.buildFullPath( args.config)
         self.sourceFile = self.buildFullPath( args.source)
         self.targetFile = self.buildFullPath( args.target)

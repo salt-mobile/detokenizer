@@ -5,9 +5,9 @@ deployment.
 
 ## Usage
 
-|Command|Parameters|Description|
-|:---|:--|:---|
-|scan|sourcefolder<br/>properties|Scan source folder and returns list of candidates files fully matching provided properties file|
-|execute|sourcefolder<br/>properties<br/>destination|Copies all files recursivly from source to destination and replaces all tokens with values from properties|
-
-The application return 0 on success. 
+|Parameters|Description|
+|:---|:---|
+|source|source file, all tokens in this file will be replaced with properties|
+|target|target file, output after the replacement|
+|config|config files, this fils is a yaml file defining the delimiters for the token|
+|properties|properties file, this file contains the dictionary of properties which shall be injected into the source file|

@@ -7,7 +7,7 @@ providers: [
           project: "/Users/mmueller.privat/WorkSalt/Dev/detokenizer"
           source: "/Users/mmueller.privat/WorkSalt/Dev/detokenizer/.build-tools.cson"
           name: "Detokenize"
-          command: "python3 ./src/main.py scan './test/data/source_folder/config.properties.php' './build/config.php' './test/data/config.yaml' ./test/data/default.properties"
+          command: "python3 ./src/main.py './test/data/source_folder/config.properties.php' './build/config.php' './test/data/config.yaml' ./test/data/default.properties"
           wd: "."
           env: {}
           modifier:
