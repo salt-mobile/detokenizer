@@ -17,7 +17,7 @@ This parameters are positional parameters.
 the following command run the tool on the test data contained in this repo:
 
 ```
-python3 ./src/main.py \
+python3 -m detokenizer \
   ./test/data/source_folder/config.properties.php \
   ./build/config.php \
   ./test/data/config.yaml \
