@@ -8,7 +8,6 @@ gpgcheck=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-webtatic-el7
 
 
-
 [webtatic-debuginfo]
 name=Webtatic Repository EL7 - $basearch - Debug
 #baseurl=https://repo.webtatic.com/yum/el7/$basearch/debug/
@@ -17,7 +16,6 @@ failovermethod=priority
 enabled=0
 gpgcheck=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-webtatic-el7
-
 
 
 [webtatic-source]
