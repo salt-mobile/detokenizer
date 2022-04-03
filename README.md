@@ -5,7 +5,7 @@ deployment.
 
 ## Usage
 
-\
+This parameters are positional parameters.
 
 |Parameters|Description|
 |:---|:---|
@@ -21,5 +21,5 @@ python3 ./src/main.py \
   ./test/data/source_folder/config.properties.php \
   ./build/config.php \
   ./test/data/config.yaml \
-  ./test/data/default.properties 
+  ./test/data/default.properties
 ```
