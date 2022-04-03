@@ -131,3 +131,4 @@ Pipefile
 Pipefile.lock
 Pipfile
 Pipfile.lock
+.DS_Store
