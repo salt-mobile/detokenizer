@@ -15,10 +15,10 @@ with open("README.md", "rb") as f:
 
 
 setup(
-    name = "cmdline-detokenizer",
+    name = "detokenizer",
     packages = ["detokenizer"],
     entry_points = {
-        "console_scripts": ['detokenizer = detokenizer:main']
+        "console_scripts": ['detokenizer = detokenizer.__main__:main']
         },
     version = version,
     description = "Python command line for property injection.",
@@ -27,4 +27,7 @@ setup(
     author = "Matthias Müller",
     author_email = "matthias.mueller@salt.ch",
     url = "https://gitlab-it.salt.ch/tools/detokenizer",
+    install_requires=[
+        'pyyaml'
+        ]
     )

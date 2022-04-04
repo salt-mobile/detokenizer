@@ -3,5 +3,5 @@ import os
 
 from .Detokenizer import Detokenizer
 
-
-Detokenizer()
+def main():
+    Detokenizer()

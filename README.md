@@ -23,3 +23,47 @@ python3 -m detokenizer \
   ./test/data/config.yaml \
   ./test/data/default.properties
 ```
+
+## Example
+
+Source file:
+
+```
+<?php
+
+ini_set('memory_limit', '${packaging.memory_limit}');
+
+$ENVIRONMENT_NAME = '${packaging.environment_name}';
+
+#region URL
+$site_URL = '${packaging.site_URL}';
+#endregion
+...
+```
+
+Properties file:
+```
+packaging.memory_limit=1024
+packaging.environment_name=default
+packaging.site_URL=
+
+packaging.host=193.168.1.12
+packaging.port=3000
+packaging.db=db_ms_12
+...
+```
+
+Produced target:
+
+```
+<?php
+
+ini_set('memory_limit', '1024');
+
+$ENVIRONMENT_NAME = 'default';
+
+#region URL
+$site_URL = '';
+#endregion
+...
+```
