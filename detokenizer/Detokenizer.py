@@ -92,7 +92,7 @@ class Detokenizer:
                 break
 
             if '=' in line:
-                pair = line.split('=')
+                pair = line.split('=',1)
                 self.properties[pair[0]] = pair[1].rstrip()
 
 
