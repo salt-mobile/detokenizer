@@ -59,7 +59,7 @@ class ScannerToken(Scanner):
         return self.key
 
     def setValue(self, value):
-        self.value = value
+        self.value = value.replace('\\"','"')
 
     def getValue(self):
         return self.value

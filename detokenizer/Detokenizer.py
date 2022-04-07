@@ -126,7 +126,10 @@ class Detokenizer:
     def injectProperties(self):
         for scanner in self.scanners:
             if isinstance(scanner, ScannerToken):
-                scanner.setValue(self.properties[scanner.getKey()])
+                if scanner.getKey() in self.properties:
+                    scanner.setValue(self.properties[scanner.getKey()])
+                else:
+                    scanner.setValue(self.startToken+scanner.getKey()+self.endToken)
 
 
     def writeOutput(self):
